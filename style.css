@@ -1,0 +1,329 @@
+@import url('http://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('http://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+
+}
+
+#sliderbox {
+    position: relative;
+    width: 200px;
+}
+
+#sliderbox img {
+    float: left;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 1.0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+.pimg1 {
+    background-image: url('linkedin.PNG');
+    background-size: contain;
+    min-height: 600px;
+    opacity: 0.6;
+}
+
+.pimg2 {
+    background-image: url('tp1.PNG');
+    min-height: 700px;
+    opacity: 0.5;
+
+
+}
+
+.pimg3 {
+    background-image: url('1_wyxuq21keffc5b0d_lMkUw.jpeg');
+    min-height: 1900px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+table {
+    background-color: black;
+    color: #ddd;
+    text-align: left;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: aliceblue;
+    color: #666;
+}
+
+.section-dark {
+    background-color: black;
+    color: #ddd;
+}
+
+
+
+.ptext .border {
+    background-color: azure;
+    padding: 20%;
+
+    width: fit-content;
+    font-size: 9px;
+
+
+}
+
+.ptext .border_1 {
+    background-color: black;
+    padding: 200px;
+
+}
+
+
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: aqua;
+    font-size: 29px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: azure;
+    padding: 23px;
+
+
+}
+
+.ptext .border_1 {
+    background-color: black;
+    padding: 200px;
+
+}
+
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+
+table li:first-letter {
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+/*--media query: for mobile setting--*/
+
+@media(max-width:568px) {
+
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+
+/*----------style menu----------*/
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    position: relative;
+    width: 150px;
+    vertical-align: middle;
+    background-color: #34495E;
+    cursor: pointer;
+    border-top: 1px solid #BDC3C7;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menu ul li:hover {
+    background-color: #2ECC71;
+}
+
+.menu ul ul {
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    border-left: 5px solid #F1C40F;
+    visibility: hidden;
+    left: 100%;
+    top: -2%;
+}
+
+.menu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+span {
+    margin-right: 15px;
+}
+
+.menu > ul > li:nth-of-type(2)::after {
+    content: "+";
+    position: absolute;
+    margin-left: 35%;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+/*-------footer style----------*/
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 30%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #385998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #bb0000;
+    color: white;
+}
+
+
+footer {
+    background-color: goldenrod;
+    opacity: .9;
+    text-align: center;
+
+}
+
+
+
+/*-----------------Style Header---------*/
+
+
+header {
+    background-color: black;
+    height: 86px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    opacity: .7;
+    top: 0;
+}
+
+#header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+nav {
+    float: right;
+    padding: 35px 20px 0 0;
+}
+
+#menu-icon {
+    background: url(wf%20logo1.PNG) center;
+    width: 40px;
+    height: 34px;
+    display: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li {
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 10px;
+    float: left;
+    font-size: 110%;
+
+}
+
+nav ul li a {
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: bisque;
+
+}
+
+.current {
+    text-decoration: none;
+}
+
+.ab,
+.Con {
+    padding: 100px 0 0 0;
+
+}
